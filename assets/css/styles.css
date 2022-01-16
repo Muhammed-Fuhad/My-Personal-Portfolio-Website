@@ -5,7 +5,7 @@
 :root {
   --header-height: 3rem;
   
-  /*===== Colores =====*/
+  /*===== Colors =====*/
   --primary-color: #edf2fc;
   --secondry-color: #212121;
   --first-color: rgba(59, 130, 246, .5);
@@ -13,7 +13,7 @@
   --dark-color-alt: #282B3A;
   --white-color: #3664F4;
 
-  /*===== Fuente y tipografia =====*/
+  /*===== Fonts and typography =====*/
   --body-font: 'Poppins', sans-serif;
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
