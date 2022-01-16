@@ -261,3 +261,33 @@ img {
     margin-right: auto;
   }
 }
+
+.imgcontent img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 12%;
+    margin-left: 6%;
+}
+.rounded-full{
+  border-radius: 9999px
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  margin-left: 6%;
+  font-family:Arial, Helvetica, sans-serif;
+  color: #3664F4;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.subname{
+  font-size: 1.25rem;
+  line-height: 0.5rem;
+  margin-left: 6%;
+  font-family:Arial, Helvetica, sans-serif;
+}
