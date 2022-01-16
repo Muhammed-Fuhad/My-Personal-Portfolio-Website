@@ -6,7 +6,7 @@
   --header-height: 3rem;
   
   /*===== Colores =====*/
-  --primary-color: #00106;
+  --primary-color: #000106;
   --secondry-color: #212121;
   --first-color: rgba(59, 130, 246, .5);
   --dark-color: #ffffff;
@@ -302,6 +302,6 @@ img {
 }
 
 .dark-theme{
-  --primary-color: #00106;
+  --primary-color: #000106;
   --secondry-color: #ffffff;
 }
