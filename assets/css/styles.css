@@ -263,11 +263,11 @@ img {
 }
 
 .imgcontent img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin-top: 12%;
-    margin-left: 6%;
+  display: block;
+  max-width: 7.5rem;
+  height: auto;
+  margin-top: 15%;
+  margin-left: 6%;
 }
 .rounded-full{
   border-radius: 9999px
