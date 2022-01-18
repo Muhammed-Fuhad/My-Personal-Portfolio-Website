@@ -75,25 +75,53 @@
         </div>
 
        
-         <!-- ===== Portfolio section ===== -->
-         <section id="portfolio">
+ <!--===Project-Section======================================================-->
+ <section id="portfolio">
+    <!--heading--------------->
+    <div class="portfolio-heading">
+      <span>Let's See My Work</span>
+      <h3>MY PROJECTS</h3>
+    </div>
+    <!--filter--------->
+    <ul class="portfolio-filter">
+      <li class="list portfolio-filter-active" data-filter="all">All</li>
+      <li class="list" data-filter="myphotos">My photos</li>
+      <li class="list" data-filter="withfriends">With friends</li>
+      <li class="list" data-filter="photography">Photography</li>
+      <li class="list" data-filter="withfamily">With family</li>
+  </ul>
+  <!--container--------->
+  <div class="portfolio-container">
+    <!--1------------>
+    <a href="assets/portfolio img/p1.JPG" class="portfolio-box photography" data-lightbox="portfolio">
+      <img alt="" src="assets/portfolio img/p2.JPG">
+    </a>
+    <!--2------------>
+    <a href="assets/portfolio img/p3.jpg" class="portfolio-box withfriends" data-lightbox="portfolio">
+      <img alt="" src="assets/portfolio img/p3.jpg">
+    </a>
+    <!--3------------>
+    <a href="assets/portfolio img/p4.jpg" class="portfolio-box withfamily" data-lightbox="portfolio">
+      <img alt="" src="assets/portfolio img/p4.JPG">
+    </a>
+    <!--4------------>
+    <a href="assets/portfolio img/p5.JPG" class="portfolio-box photography" data-lightbox="portfolio">
+      <img alt="" src="assets/portfolio img/p5.JPG">
+    </a>
+    <!--5------------>
+    <a href="assets/portfolio img/p6.JPG" class="portfolio-box photography" data-lightbox="portfolio">
+      <img alt="" src="assets/portfolio img/p6.JPG">
+    </a>
+    <!--6------------>
+    <a href="assets/portfolio img/p7.JPG" class="portfolio-box myphotos" data-lightbox="portfolio">
+      <img alt="" src="assets/portfolio img/p7.jpg">
+    </a>
+  </div>
+  </section>
+  
 
-             <!-- ===== heading ===== -->
-             <div class="portfolio-heading">
-                 <span>Lets see my photos</span>
-                 <h3>My portfolio</h3>
-             </div>
-         </section>
-
-         <!-- ===== Filter ===== -->
-
-         <ul class="portfolio-filter">
-             <li class="list portfolio-filter-active">All</li>
-             <li class="list">My Photos</li>
-             <li class="list">With Friends</li>
-             <li class="list">Photography</li>
-             <li class="list">With family</li>
-         </ul>
+            
+         </div>
         <main id="About" >
             <div class="Aboutsection">
                 <h1>About</h1>
@@ -104,9 +132,18 @@
                 <p> I'm love coding, Currently iam learning </p>
                 <p>This website is my first open source project.</p>
             </div>
+
+            <div>
+                <button class="aboutbutton">
+                    <a href="about.html">
+                        <h3 class="aboutbuttontext">More</h3>
+                    </a>
+                </button>
+            </div>
             
         </main>
         </div>
+
 
 
 
@@ -122,6 +159,36 @@
                 }
             }
         </script>
+
+        <!--===== Using jquery =====-->
+        <script src="assets/js/jquery.js"></script>
+
+        <script type="text/javascript">
+
+            /*js----------------------------------*/
+            <script src="assets/js/jquery.js"></script>
+        <script src="js/lightbox.min.js"></script>
+
+    <script>
+         /*blog-filter-menu----------------------------*/
+         $(document).on('click','.portfolio-filter li',function(){
+            $(this).addClass('portfolio-filter-active').siblings().removeClass('portfolio-filter-active')
+        });
+        
+        /*portfolio-filter---------------------------------*/
+         $(document).ready(function(){
+            $('.list').click(function(){
+                const value = $(this).attr('data-filter');
+                if(value == 'all'){
+                    $('.portfolio-box').show('1000');
+                }
+                else{
+                    $('.portfolio-box').not('.'+value).hide('1000');
+                    $('.portfolio-box').filter('.'+value).show('1000');
+                }
+            });
+        });
+    </script>
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
