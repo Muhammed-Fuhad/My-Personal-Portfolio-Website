@@ -342,7 +342,7 @@ img {
   color: #222222;
 }
 .portfolio-heading span{
-  color: #f33c3c;
+  color: var(--primary-color);
 }
 .portfolio-filter{
   display: flex;
@@ -391,7 +391,7 @@ img {
  border-radius: 4px;
  height: 25px;
  width: 70px;
- background-color: #000106;
+ background-color: var(--primary-color);
  padding: 10px 24px;
  text-align: center;
  border: none;
