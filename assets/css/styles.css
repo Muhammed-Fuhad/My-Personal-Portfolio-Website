@@ -337,7 +337,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgba(237, 237, 237, 0.6);
   flex-wrap: wrap;
   margin: 20px;
 }
@@ -393,7 +392,7 @@ img {
  border-radius: 4px;
  height: 25px;
  width: 70px;
- background-color: #000106;
+ background-color: #000000;
  padding: 10px 24px;
  text-align: center;
  border: none;
