@@ -328,10 +328,10 @@ img {
   font-size: 2.7rem;
   font-weight: 600;
   text-transform: uppercase;
-  color: var(--primary-color);
+  color: #222222;
 }
 .portfolio-heading span{
-  color: #FF2323;
+  color: #f33c3c;
 }
 .portfolio-filter{
   display: flex;
@@ -362,7 +362,6 @@ img {
   flex-wrap: wrap;
   max-width: 1200px;
   margin: auto;
-  border: none;
 }
 .portfolio-box{
   width: 330px;
@@ -394,7 +393,7 @@ img {
  border-radius: 4px;
  height: 25px;
  width: 70px;
- background-color: var(--primary-color);
+ background-color: #000106;
  padding: 10px 24px;
  text-align: center;
  border: none;
