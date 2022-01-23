@@ -304,17 +304,6 @@ img {
   --secondry-color: #ffffff;
 }
 
-.Aboutsection{
-  font-size: 1.25rem;
-  margin-left: 6%;
-  margin-top: 10%;
-  color: #000106;
-}
-
-.Paragraph{
-  font-size: 1.0rem;
-  color: #282B3A;
-}
 
 /** portfolio Section============================*/
 
@@ -386,6 +375,20 @@ img {
   height: 100%;
   overflow: hidden;
   border-radius: 5px;
+}
+
+/** About Section============================*/
+
+.Aboutsection{
+  font-size: 1.25rem;
+  margin-left: 6%;
+  margin-top: 10%;
+  color: #000106;
+}
+
+.Paragraph{
+  font-size: 1.0rem;
+  color: #282B3A;
 }
 .aboutbutton{
  border-radius: 4px;
