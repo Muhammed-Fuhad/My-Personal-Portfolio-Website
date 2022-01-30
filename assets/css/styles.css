@@ -3,7 +3,7 @@
   --header-height: 3rem;
   
   /*===== Colors =====*/
-  --primary-color: #fafafa;
+  --primary-color: #edf2fc;
   --secondry-color: #212121;
   --first-color: rgba(59, 130, 246, .5);
   --dark-color: #ffffff;
@@ -17,6 +17,10 @@
 
   /*===== z index =====*/
   --z-fixed: 100;
+}
+::selection{
+  color: #fff;
+  background: #3664F4;
 }
 
 @media screen and (min-width: 768px) {
@@ -304,6 +308,17 @@ img {
   --secondry-color: #ffffff;
 }
 
+.Aboutsection{
+  font-size: 1.25rem;
+  margin-left: 6%;
+  margin-top: 10%;
+  color: #000106;
+}
+
+.Paragraph{
+  font-size: 1.0rem;
+  color: #282B3A;
+}
 
 /** portfolio Section============================*/
 
@@ -337,13 +352,14 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
   flex-wrap: wrap;
   margin: 20px;
 }
 .portfolio-filter li{
   margin: 10px;
   padding: 5px 20px;
-  color: #9b9b9b;
+  color: #9fd1fb;
   font-size: 1rem;
   letter-spacing: 0.5px;
   font-weight: 400px;
@@ -351,7 +367,7 @@ img {
   user-select: none;
 }
 .portfolio-filter-active{
-  background-color: #C0C0C0;
+  background-color:#3664F4;
   color: #272727;
 }
 .portfolio-container{
@@ -361,11 +377,12 @@ img {
   flex-wrap: wrap;
   max-width: 1200px;
   margin: auto;
+
 }
 .portfolio-box{
   width: 330px;
   padding: 15px;
-  border: 1px solid #eeeeee;
+  border: none;
 
 }
 .portfolio-box img{
@@ -374,25 +391,11 @@ img {
   overflow: hidden;
   border-radius: 5px;
 }
-
-/** About Section============================*/
-
-.Aboutsection{
-  font-size: 1.25rem;
-  margin-left: 6%;
-  margin-top: 10%;
-  color: #000106;
-}
-
-.Paragraph{
-  font-size: 1.0rem;
-  color: #282B3A;
-}
 .aboutbutton{
  border-radius: 4px;
  height: 25px;
  width: 70px;
- background-color: #000000;
+ background-color: #3664F4;
  padding: 10px 24px;
  text-align: center;
  border: none;
@@ -405,3 +408,145 @@ img {
   margin-left: -8px;
 
 }
+.contactheading{
+  text-align: center;
+  color: #000106;
+  margin-top: 1.5rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.container{
+  z-index: 12;
+  max-width: 1050px;
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  margin: 0 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.container .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 20px;
+}
+.content .image-box{
+  max-width: 55%;
+}
+.content .image-box img{
+  width: 100%;
+}
+.content .topic{
+  font-size: 22px;
+  font-weight: 500;
+  color: #3664F4;
+}
+.content form{
+  width: 40%;
+  margin-right: 30px;
+}
+.content .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 16px 0;
+  position: relative;
+}
+.content .input-box input{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  padding-left: 16px;
+  background: rgb(201, 216, 245);
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.content .input-box input:focus,
+.content .input-box input:valid{
+  border-color: #3664F4;
+  background-color: #fff;
+}
+.content .input-box label{
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  color: #636c72;
+  font-size: 15px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+.content .input-box input:focus ~ label,
+.content .input-box input:valid ~ label{
+  top: 0;
+  left: 12px;
+  display: 14px;
+  color: #3664F4;
+  background: #fff;
+}
+.content .input-box input[type="submit"]{
+  color: #fff;
+  background: #3664F4;
+  padding-left: 0;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+.content .input-box input[type="submit"]:hover{
+  background-color: #3664F4;
+}
+@media (max-width:1000px) {
+  .content .image-box{
+    max-width: 70%;
+  }
+  .content{
+    padding: 10px 0;
+  }
+}
+@media (max-width:900px) {
+  .content .image-box{
+    display: none;
+  }
+  .content form{
+    width: 100%;
+    margin-left: 30px;
+  }
+}
+.container{
+  align-items: center;
+}
+.footer{
+  background-color: #3664F4;
+
+}
+.footer__container{
+  padding: .25rem 0 6rem;
+
+}
+.footer__title{
+  color: #fae9fb;
+}
+.footer__title{
+  text-align: center;
+  margin-bottom: .25rem;
+  color: #edf2fc;
+  text-transform: uppercase;
+}
+
+.footer__copy{
+  display: block;
+  margin-top: 1.5rem;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+
+
+
