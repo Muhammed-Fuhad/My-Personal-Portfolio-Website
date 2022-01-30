@@ -328,7 +328,7 @@ img {
   width: 30%;
   height: 50%;
 }
-.aboutbutton{
+/**.aboutbutton{
   border-radius: 4px;
   height: 40px;
   width: 100px;
@@ -344,7 +344,7 @@ img {
    margin-top: -2px;
    margin-left: -5px;
    font-size: 1.25rem;
- }
+ }**/
 /** portfolio Section============================*/
 
 #portfolio{
