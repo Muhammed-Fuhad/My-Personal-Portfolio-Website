@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="assets/img/perfil.png" type="image/icon type">
+        <meta title="Home : Muhammed Fuhad">
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- ===== GOOGLE FONTS ===== -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+        <!-- ===== poppons font family ===== -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+        <title>Muhammed Fuhad</title>
+    </head>
+    <body>
+        <header class="header">
+            <a href="#" class="header__logo">Muhammed Fuhad</a>
+
+            <ion-icon name="menu-outline" class="header__toggle" onclick="toggleMenu()"></ion-icon>
+
+            <nav class="nav" id="nav-menu">
+                <div class="nav__content bd-grid">
+
+                    <ion-icon name="close-outline" class="nav__close" onclick="toggleMenu()"></ion-icon>
+    
+                    <div class="nav__perfil">
+                        <div class="nav__img">
+                            <img src="assets/img/perfil.png" alt="">
+                        </div>
+                        
+                        <div>
+                            <a href="#" class="nav__name">Muhammed Fuhad</a>
+                            <span class="nav__profesion">Web designer</span>
+                        </div>
+                    </div>
+    
+                    <div class="nav__menu">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#" class="nav__link active">Home</a></li>
+                            <li class="nav__item"><a href="#About" class="nav__link">About</a></li>
+                            <!----<li class="nav__item"><a href="#Skills" class="nav__link">Skills</a></li>-->
+                            <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                            <li class="nav__item"><a href="#Contact" class="nav__link">Contact</a></li>
+                            <img src="assets/dark theme icon/moon.png" alt="" id="icon">
+                        </ul>
+                        
+                    </div>
+    
+                    <div class="nav__social">
+                        <a href="https://github.com/Muhammed-Fuhad" class="nav__social-icon"><ion-icon name="logo-linkedin"></ion-icon></a>
+                        <a href="https://github.com/Muhammed-Fuhad" class="nav__social-icon"><ion-icon name="logo-github"></ion-icon></a>
+                        <a href="https://github.com/Muhammed-Fuhad" class="nav__social-icon"><ion-icon name="logo-behance"></ion-icon></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="space-y-24">
+            <div class="imgcontent">
+                <img src="assets/img/perfil.png" alt="" height="160" width="160" class=rounded-full>
+            </div>
+            <div class="name">
+                <h1 class="text-4xl font-bold" data-v-68f0e894="">Muhammed Fuhad</h1>
+            </div>
+            <div class="subname">
+                <h3>Webdesigner</h3>
+            </div>
+        </div>
+
+
+<!--===Project-Section======================================================-->
+
+<section id="portfolio">
+    <!--heading--------------->
+    <div class="portfolio-heading">
+        <span>Let's See My Portfolio</span>
+        <h3>MY PORTFOLIO</h3>
+    </div>
+    <!--filter--------->
+    <ul class="portfolio-filter">
+        <li class="list portfolio-filter-active" data-filter="all">All</li>
+        <li class="list" data-filter="myphotos">My photos</li>
+        <li class="list" data-filter="withfriends">With friends</li>
+        <li class="list" data-filter="photography">Photography</li>
+        <li class="list" data-filter="withfamily">With family</li>
+    </ul>
+<!--container--------->
+<div class="portfolio-container">
+    <!--1------------>
+    <a href="assets/portfolio img/p2.JPG" class="portfolio-box photography" data-lightbox="portfolio">
+        <img alt="" src="assets/portfolio img/p2.JPG">
+    </a>
+    <!--2------------>
+    <a href="assets/portfolio img/p3.jpg" class="portfolio-box withfriends" data-lightbox="portfolio">
+        <img alt="" src="assets/portfolio img/p3.jpg">
+    </a>
+    <!--3------------>
+    <a href="assets/portfolio img/p4.jpg" class="portfolio-box withfamily" data-lightbox="portfolio">
+        <img alt="" src="assets/portfolio img/p4.JPG">
+    </a>
+    <!--4------------>
+    <a href="assets/portfolio img/p5.JPG" class="portfolio-box photography" data-lightbox="portfolio">
+        <img alt="" src="assets/portfolio img/p5.JPG">
+    </a>
+    <!--5------------>
+    <a href="assets/portfolio img/p6.JPG" class="portfolio-box photography" data-lightbox="portfolio">
+        <img alt="" src="assets/portfolio img/p6.JPG">
+    </a>
+    <!--6------------>
+    <a href="assets/portfolio img/p7.JPG" class="portfolio-box myphotos" data-lightbox="portfolio">
+        <img alt="" src="assets/portfolio img/p7.jpg">
+    </a>
+</div>
+</section>
+
+
+<!--===About-Section======================================================-->
+
+    <section id=About>
+        
+            <div class="Aboutsection">
+                <h1>About</h1>
+            <div>
+            
+            <div class="aboutimg">
+                <img class="aboutimage" alt="" src="assets/img/about.jpg">
+            </div>
+
+            <div class="Paragraph">
+                <p> Hi, my name is Muhammed Fuhad I'm a designer, developer. </p>
+                <p> I love coding, Currently iam learning </p>
+                <p>This website is my first open source project.</p>
+            </div>
+
+        <!---- <div>
+                <button class="aboutbutton">
+                    <a href="about.html">
+                        <h3 class="aboutbuttontext">More</h3>
+                    </a>
+                </button>
+            </div>----->
+    </section>       
+        
+
+<!--===Contact-Section======================================================-->
+    <div>
+        <section id="Contact">
+            <div class="contactheading">
+                <h3>Contact Me</h3>
+            </div>
+            <div class="container">
+                <div class="content">
+                    <div class="image-box">
+                        <img src="assets/img/contactimg.png" alt=""> 
+                    </div>
+                <form action="#">
+                    <div class="topic">Send us a message</div>
+                    <div class="input-box">
+                    <input type="text" required>
+                    <label>Enter your name</label>
+                    </div>
+                    <div class="input-box">
+                    <input type="text" required>
+                    <label>Enter your email</label>
+                    </div>
+                    <div class="input-box">
+                    <input type="submit" value="Send Message">
+                    </div>
+                </form>
+                    </div>
+                    </div>
+        </section>
+    </div>
+
+
+
+		<footer class="footer-distributed">
+
+			<div class="footer-right">
+
+                <a href="https://github.com/Muhammed-Fuhad" class="nav__social-icon"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="https://github.com/Muhammed-Fuhad" class="nav__social-icon"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="https://github.com/Muhammed-Fuhad" class="nav__social-icon"><ion-icon name="logo-behance"></ion-icon></a>
+
+
+			</div>
+
+			<div class="footer-left">
+
+				<p class="footer-links">
+					<a class="link-1" href="#">Home</a>
+
+					<a href="#portfolio">Portfolio</a>
+
+					<a href="#About">About</a>
+
+					<a href="#Contact">Contact</a>
+				</p>
+
+				<p>Muhammed Fuhad &copy; 2022</p>
+			</div>
+
+		</footer>
+
+
+        <script>
+            var icon = document.getElementById("icon");
+
+            icon.onclick = function(){
+                document.body.classList.toggle("dark-theme");
+                if(document.body.classList.contains("dark-theme")){
+                    icon.src= "assets/dark theme icon/sun.png";
+                }else{
+                    icon.src = "assets/dark theme icon/moon.png";
+                }
+            }
+        </script>
+
+        <!--===== Using jquery =====-->
+        <script src="assets/js/jquery.js"></script>
+
+        <script type="text/javascript"></script>
+
+        <script src="js/lightbox.min.js"></script>
+
+    <script>
+    /*blog-filter-menu----------------------------*/
+            $(document).on('click','.portfolio-filter li',function(){
+            $(this).addClass('portfolio-filter-active').siblings().removeClass('portfolio-filter-active')
+        });
+        
+        /*portfolio-filter---------------------------------*/
+            $(document).ready(function(){
+            $('.list').click(function(){
+                const value = $(this).attr('data-filter');
+                if(value == 'all'){
+                    $('.portfolio-box').show('1000');
+                }
+                else{
+                    $('.portfolio-box').not('.'+value).hide('1000');
+                    $('.portfolio-box').filter('.'+value).show('1000');
+                }
+            });
+        });
+    </script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+
+        <!-- ===== IONICONS ===== -->
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    </body>
+</html>
