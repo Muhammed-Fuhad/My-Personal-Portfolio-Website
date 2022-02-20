@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="assets/img/perfil.png" type="image/icon type">
         <meta title="Home : Muhammed Fuhad">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
         <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="assets/css/styles.css">
@@ -161,15 +162,15 @@
                     <div class="image-box">
                         <img src="assets/img/contactimg.png" alt=""> 
                     </div>
-                <form action="#">
+                <form id="submit-form" method="POST" action="">
                     <div class="topic">Send us a message</div>
                     <div class="input-box">
-                    <input type="text" required>
-                    <label>Enter your name</label>
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="name" placeholder="Name">
                     </div>
                     <div class="input-box">
-                    <input type="text" required>
-                    <label>Enter your email</label>
+                        <label for="lname">Email</label>
+                        <input type="text" id="lname" name="email" placeholder="Email">
                     </div>
                     <div class="input-box">
                     <input type="submit" value="Send Message">
@@ -209,6 +210,28 @@
 			</div>
 
 		</footer>
+
+
+<!---Contact Form Submission-->
+        <script>
+            $("#submit-form").submit((e)=>{
+                e.preventDefault()
+                $.ajax({
+                    url:"https://script.google.com/macros/s/AKfycbwcD0H8OEdMNwL12Zmt6gI52E0UnsQN_wB0oYuhtWqcqiiAIrRN2FtFHE1ZOOupuyWKvg/exec",
+                    data:$("#submit-form").serialize(),
+                    method:"post",
+                    success:function (response){
+                        alert("Form submitted successfully")
+                        window.location.reload()
+                        //window.location.href="https://google.com"
+                    },
+                    error:function (err){
+                        alert("Something Went Wrong")
+        
+                    }
+                })
+            })
+        </script>
 
 
         <script>
